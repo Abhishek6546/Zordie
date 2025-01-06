@@ -1,0 +1,179 @@
+
+
+
+body{
+  font-family: poppins;
+}
+@media (min-width: 416px) and (max-width: 512px) {
+    .play {
+      top:13px;
+    }
+  }
+@media (min-width: 513px) and (max-width: 768px) {
+    .play {
+      top:16px;
+      height: 30px;
+      left:50px;
+    }
+  }
+@media (min-width: 600px) and (max-width: 768px) {
+    .play {
+      left:80px;
+    }
+  }
+
+@media (min-width: 518px) and (max-width: 680px) {
+    .square {
+      right:60px;
+    }
+  }
+@media (min-width: 680px) and (max-width: 768px) {
+    .square {
+      right:120px;
+    }
+  }
+
+ 
+  @media (min-width: 1241px)  {
+    .btns {
+       left:25%;
+       top: 31%;
+    }
+  }  
+@media (min-width: 1024px) and (max-width: 1241px) {
+    .btns {
+       left:25%;
+       top: 36%;
+    }
+  }
+@media (min-width: 960px) and (max-width: 1024px) {
+    .btns {
+       left:25%;
+       top: 37%;
+       
+    }
+  }
+@media (min-width: 838px) and (max-width: 960px) {
+    .btns {
+      left:18%;
+      top: 39%;
+      width: 65%;
+    }
+  }
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .btns {
+       left:10%;
+       top: 35%;
+    }
+  }
+@media (min-width: 768px) and (max-width: 839px) {
+    .btns {
+       left:18%;
+       top: 42%;
+       width: 65%;
+    }
+  }
+@media (min-width: 600px) and (max-width: 637px) {
+    .btns {
+      left:4%;
+      top: 34%;
+    }
+  }
+  @media (min-width: 515px) and (max-width: 600px) {
+    .btns {
+       top: 35%;
+    }
+  }
+  @media (min-width: 515px) and (max-width: 520px) {
+    .btns {
+       top: 38%;
+    }
+  }
+  @media (max-width: 515px)  {
+    .btns {
+       top: 39%;
+    }
+  }
+
+
+  @media (min-width: 1025px) and (max-width: 1242px) {
+    .div4 {
+      margin-top: -90px;
+   }
+   .div6{
+    margin-top: -246px;
+   }
+  }
+  @media (min-width: 950px) and (max-width: 1025px) {
+    .div4 {
+      margin-top: -4px;
+   }
+   .div6{
+    margin-top: -70px;
+   }
+  }
+  @media (min-width: 997px) and (max-width: 1025px) {
+   
+   .div6{
+    margin-top: -40px;
+   }
+  }
+
+  @media (min-width: 769px) and (max-width: 780px) {
+    .div4 {
+      margin-top: -125px;
+   }
+   .div6{
+    margin-top: -280px;
+   }
+  }
+  @media (min-width: 780px) and (max-width: 816px) {
+    .div4 {
+      margin-top: -90px;
+   }
+   .div6{
+    margin-top: -247px;
+   }
+  }
+  @media (min-width: 816px) and (max-width: 850px) {
+    .div4 {
+      margin-top: -60px;
+   }
+   .div6{
+    margin-top: -185px;
+   }
+  }
+  @media (min-width: 850px) and (max-width: 900px) {
+    .div4 {
+      margin-top: -60px;
+   }
+   .div6{
+    margin-top: -185px;
+   }
+  }
+  @media (min-width: 900px) and (max-width: 919px) {
+    .div4 {
+      margin-top: -33px;
+   }
+   .div6{
+    margin-top: -130px;
+   }
+  }
+  @media (min-width: 919px) and (max-width: 950px) {
+    .div4 {
+      margin-top: -33px;
+   }
+   .div6{
+    margin-top: -100px;
+   }
+  }
+  @media (min-width:1400px)  {
+   .cardbtn{
+    padding-left: 235px;
+   }
+  }
+
+
+  
+

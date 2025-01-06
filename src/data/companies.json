@@ -1,0 +1,48 @@
+[
+    {
+      "name": "Vanguard",
+      "path": "/companies/vanguard.png",
+      "id": 1
+    },
+    {
+      "name": "salesforce",
+      "path": "/companies/salesforce.png",
+      "id": 2
+    },
+    {
+      "name": "pinterest",
+      "path": "/companies/pinterest.png",
+      "id": 3
+    },
+    {
+      "name": "naf",
+      "path": "/companies/naf.png",
+      "id": 4
+    },
+    {
+      "name": "loreal",
+      "path": "/companies/loreal.png",
+      "id": 5
+    },
+    {
+      "name": "kenvue",
+      "path": "/companies/kenvue.png",
+      "id": 6
+    },
+    {
+      "name": "intuit",
+      "path": "/companies/intuit.png",
+      "id": 7
+    },
+    {
+        "name": "hubspot",
+        "path": "/companies/hubspot.png",
+        "id": 8
+      },
+      {
+        "name": "dropbox",
+        "path": "/companies/dropbox.png",
+        "id": 9
+      }
+  
+  ]
