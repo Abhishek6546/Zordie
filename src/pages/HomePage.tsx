@@ -144,12 +144,12 @@ const HomePage = () => {
 
                     </div>
                 </div>
-                <div className=' w-[80%]  min-h-16 bg-[#6C227A] flex justify-center  items-center md:gap-6 rounded-full mx-auto py-2 px-2 mt-[5px] '>
-                    <button className=' w-[45%] rounded-full text-xs md:text-sm  bg-black  text-white  px-2 md:px-4  py-2  font-semibold  md:h-12  outline-none'>Support</button>
-                    <button className=' w-[45%] rounded-full text-xs md:text-sm bg-[#6C227A]  text-white px-2 md:px-4 py-2  font-semibold  md:h-12  outline-none'>Operations</button>
-                    <button className=' w-[45%] rounded-full text-xs md:text-sm  bg-[#6C227A]  text-white px-2 py-2 md:px-4  font-semibold md:h-12  outline-none'>IT</button>
-                    <button className=' w-[45%] rounded-full text-xs md:text-sm bg-[#6C227A]  text-white px-2 py-2 md:px-4  font-semibold md:h-12  outline-none'>Sales</button>
-                    <button className=' w-[45%] rounded-full text-xs md:text-sm bg-[#6C227A]  text-white px-2 py-2 md:px-4  font-semibold md:h-12  outline-none'>Marketing</button>
+                <div className=' w-[80%]  min-h-16 bg-[#6C227A] flex justify-center  items-center md:gap-6 rounded-full mx-auto px-2 py-2 md:px-2 mt-[5px] '>
+                    <button className=' w-[40%] rounded-full text-xs md:text-sm  bg-black  text-white  px-1 md:px-4  py-2  font-semibold  md:h-12  outline-none'>Support</button>
+                    <button className=' w-[40%] rounded-full text-xs md:text-sm bg-[#6C227A]  text-white px-1 md:px-4 py-2  font-semibold  md:h-12  outline-none'>Operations</button>
+                    <button className=' w-[40%] rounded-full text-xs md:text-sm  bg-[#6C227A]  text-white px-1 py-2 md:px-4  font-semibold md:h-12  outline-none'>IT</button>
+                    <button className=' w-[40%] rounded-full text-xs md:text-sm bg-[#6C227A]  text-white px-1 py-2 md:px-4  font-semibold md:h-12  outline-none'>Sales</button>
+                    <button className=' w-[40%] rounded-full text-xs md:text-sm bg-[#6C227A]  text-white px-1 py-2 md:px-4  font-semibold md:h-12  outline-none'>Marketing</button>
                 </div>
 
                 <div className='flex flex-col justify-center  items-center '>
@@ -456,8 +456,8 @@ const HomePage = () => {
                     <div className='flex flex-col gap-4 items-center justify-center px-2 md:px-4'>
                          <h3 className='text-2xl md:text-3xl lg:text-4xl  lg:w-[70%] text-center'>Accelerate growth with the full-stack generative AI platform</h3>
                          <div className='flex gap-2'>
-                            <button className='text-black sm:w-[180px] bg-none border border-black  px-4 py-2 rounded-full font-semibold'>Request a demo</button>
-                            <button className='text-white sm:w-[180px] font-semibold bg-black  px-4 py-2 rounded-full'>Try for free</button>
+                            <button className='text-black sm:w-[180px] bg-none border border-black hover:bg-blue-600  px-4 py-2 rounded-full font-semibold'>Request a demo</button>
+                            <button className='text-white sm:w-[180px] font-semibold bg-black  px-4 py-2 hover:bg-gray-950 rounded-full'>Try for free</button>
                          </div>
                     </div>
             </div>

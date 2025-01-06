@@ -114,7 +114,7 @@ const Cards: React.FC = () => {
       </div >
       {/* Shadow at the end */}
  
-        <div className="text-white  absolute h-[500px]  md:h-[400px] w-14  mt-[-20px]"   style={{
+        <div className="text-white  absolute h-[450px]  md:h-[400px] w-14  mt-[-20px]"   style={{
             background: "linear-gradient(to left, #FFFFFF 10%, #FFFFFF00 100%)",
             pointerEvents: "none",
           }}></div>
