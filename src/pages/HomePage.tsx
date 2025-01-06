@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar'
 import { Button } from '@/components/ui/button'
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
-import React from 'react'
+
 import companies from "../data/companies.json"
 import Autoplay from 'embla-carousel-autoplay'
 
