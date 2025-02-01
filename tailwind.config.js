@@ -12,6 +12,7 @@ export default {
 		colors: {
 		  pinkLight: "#FFD6FE",
 		  purpleDark: "#560858",
+		  
 		},
 		backgroundImage: {
 		  "custom-radial": 

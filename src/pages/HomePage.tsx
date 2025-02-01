@@ -15,8 +15,27 @@ import {
 
 import Cards2 from '@/components/Cards2'
 import Footer from '@/components/Footer'
+import { useState } from 'react'
+
+
+interface ButtonColors {
+    button1: string;
+    button2: string;
+}
 
 const HomePage = () => {
+    const [buttonColors, setButtonColors] = useState<ButtonColors>({
+        button1: 'bg-white',
+        button2: 'bg-white',
+    });
+
+    // Function to handle click and change the color
+    const handleButtonClick = (buttonKey: keyof ButtonColors): void => {
+        setButtonColors({
+            button1: buttonKey === 'button1' ? 'bg-gray-500' : 'bg-white',
+            button2: buttonKey === 'button2' ? 'bg-gray-500' : 'bg-white',
+        });
+    };
     return (
         <>
             <Navbar />
@@ -78,10 +97,10 @@ const HomePage = () => {
                 </div>
 
                 <div className=' btns w-[80%] max-sm:top-[34%] max-sm:ml-[40px] md:w-[50%] min-h-16 bg-[#D4B2F7] flex justify-center max-sm:flex-wrap items-center md:gap-6 rounded-full mx-auto absolute  xl:left-[25%] xl:top-[32%]  py-2 '>
-                    <button className='w-[45%] rounded-full text-xs md:text-sm  bg-[#D4B2F7]  text-black px-2 md:px-4  py-2  font-semibold  md:h-12  outline-none'>Code Generation</button>
-                    <button className=' w-[45%] rounded-full text-xs md:text-sm bg-black text-white px-2 md:px-4 py-2  font-semibold  md:h-12  outline-none'>Knowledge Graph</button>
-                    <button className=' w-[45%] rounded-full text-xs md:text-sm  bg-[#D4B2F7]  text-black px-2 py-2 md:px-4  font-semibold md:h-12  outline-none'>AI Animation</button>
-                    <button className=' w-[45%] rounded-full text-xs md:text-sm bg-[#D4B2F7]  text-black px-2 py-2 md:px-4  font-semibold md:h-12  outline-none'>AI Studio</button>
+                    <button className='w-[45%] rounded-full text-xs md:text-sm  bg-[#D4B2F7]  hover:bg-black hover:text-white text-black px-2 md:px-4  py-2  font-semibold  md:h-12  outline-none'>Code Generation</button>
+                    <button className=' w-[45%] rounded-full text-xs md:text-sm bg-[#D4B2F7]  hover:bg-black hover:text-white text-black px-2 md:px-4 py-2  font-semibold  md:h-12  outline-none'>Knowledge Graph</button>
+                    <button className=' w-[45%] rounded-full text-xs md:text-sm  bg-[#D4B2F7] hover:bg-black hover:text-white  text-black px-2 py-2 md:px-4  font-semibold md:h-12  outline-none'>AI Animation</button>
+                    <button className=' w-[45%] rounded-full text-xs md:text-sm bg-[#D4B2F7]  hover:bg-black hover:text-white text-black px-2 py-2 md:px-4  font-semibold md:h-12  outline-none'>AI Studio</button>
                 </div>
 
                 <div className='md:w-[80%] mx-auto rounded-t-lg bg-black mt-20 max-md:pb-20 pb-32' >
@@ -145,11 +164,11 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className=' w-[80%]  min-h-16 bg-[#6C227A] flex justify-center  items-center md:gap-6 rounded-full mx-auto px-2 py-2 md:px-2 mt-[5px] '>
-                    <button className=' w-[40%] rounded-full text-xs md:text-sm  bg-black  text-white  px-1 md:px-4  py-2  font-semibold  md:h-12  outline-none'>Support</button>
-                    <button className=' w-[40%] rounded-full text-xs md:text-sm bg-[#6C227A]  text-white px-1 md:px-4 py-2  font-semibold  md:h-12  outline-none'>Operations</button>
-                    <button className=' w-[40%] rounded-full text-xs md:text-sm  bg-[#6C227A]  text-white px-1 py-2 md:px-4  font-semibold md:h-12  outline-none'>IT</button>
-                    <button className=' w-[40%] rounded-full text-xs md:text-sm bg-[#6C227A]  text-white px-1 py-2 md:px-4  font-semibold md:h-12  outline-none'>Sales</button>
-                    <button className=' w-[40%] rounded-full text-xs md:text-sm bg-[#6C227A]  text-white px-1 py-2 md:px-4  font-semibold md:h-12  outline-none'>Marketing</button>
+                    <button className=' w-[40%] rounded-full text-xs md:text-sm  bg-[#6C227A]  hover:bg-black hover:text-white text-white  px-1 md:px-4  py-2  font-semibold  md:h-12  outline-none'>Support</button>
+                    <button className=' w-[40%] rounded-full text-xs md:text-sm bg-[#6C227A] hover:bg-black hover:text-white text-white px-1 md:px-4 py-2  font-semibold  md:h-12  outline-none'>Operations</button>
+                    <button className=' w-[40%] rounded-full text-xs md:text-sm  bg-[#6C227A] hover:bg-black hover:text-white text-white px-1 py-2 md:px-4  font-semibold md:h-12  outline-none'>IT</button>
+                    <button className=' w-[40%] rounded-full text-xs md:text-sm bg-[#6C227A] hover:bg-black hover:text-white text-white px-1 py-2 md:px-4  font-semibold md:h-12  outline-none'>Sales</button>
+                    <button className=' w-[40%] rounded-full text-xs md:text-sm bg-[#6C227A] hover:bg-black hover:text-white text-white px-1 py-2 md:px-4  font-semibold md:h-12  outline-none'>Marketing</button>
                 </div>
 
                 <div className='flex flex-col justify-center  items-center '>
@@ -175,14 +194,20 @@ const HomePage = () => {
                     </div>
                     <div className='h-[1px] bg-white mx-auto w-[80%] md:w-[30%] mt-[25px]'></div>
 
-                    <div className='flex gap-3 justify-center  mt-[30px]'>
-                        <div className='w-[38px] h-[38px] rounded-full flex justify-center items-center bg-white'>
-                            <img src="/section3/Icon.png" alt="arrow" />
-                        </div>
-                        <div className='  w-[38px] h-[38px] rounded-full flex justify-center items-center bg-white'>
-                            <img src="/section3/Icon2.png" alt="arrow" />
-                        </div>
-                    </div>
+                    <div className="flex gap-3 justify-center mt-[30px]">
+            <div
+                className={`w-[38px] h-[38px] cursor-pointer rounded-full flex justify-center items-center ${buttonColors.button1}`}
+                onClick={() => handleButtonClick('button1')}
+            >
+                <img src="/section3/Icon.png" alt="arrow" />
+            </div>
+            <div
+                className={`w-[38px] h-[38px] cursor-pointer rounded-full flex justify-center items-center ${buttonColors.button2}`}
+                onClick={() => handleButtonClick('button2')}
+            >
+                <img src="/section3/Icon2.png" alt="arrow" />
+            </div>
+        </div>
                 </div>
             </div>
 
@@ -451,19 +476,19 @@ const HomePage = () => {
             <Cards2 />
 
 
-            
+
             <div className=' h-[300px] md:h-[400px] flex justify-center items-center   bg-[linear-gradient(90deg,#C45FFF_5%,#430866_100%)]'>
-                    <div className='flex flex-col gap-4 items-center justify-center px-2 md:px-4'>
-                         <h3 className='text-2xl md:text-3xl lg:text-4xl  lg:w-[70%] text-center'>Accelerate growth with the full-stack generative AI platform</h3>
-                         <div className='flex gap-2'>
-                            <button className='text-black sm:w-[180px] bg-none border border-black hover:bg-blue-600  px-4 py-2 rounded-full font-semibold'>Request a demo</button>
-                            <button className='text-white sm:w-[180px] font-semibold bg-black  px-4 py-2 hover:bg-gray-950 rounded-full'>Try for free</button>
-                         </div>
+                <div className='flex flex-col gap-4 items-center justify-center px-2 md:px-4'>
+                    <h3 className='text-2xl md:text-3xl lg:text-4xl  lg:w-[70%] text-center'>Accelerate growth with the full-stack generative AI platform</h3>
+                    <div className='flex gap-2'>
+                        <button className='text-black sm:w-[180px] bg-none border border-black hover:bg-blue-600  px-4 py-2 rounded-full font-semibold'>Request a demo</button>
+                        <button className='text-white sm:w-[180px] font-semibold bg-black  px-4 py-2 hover:bg-gray-950 rounded-full'>Try for free</button>
                     </div>
+                </div>
             </div>
 
             {/* Footer */}
-            <Footer/>
+            <Footer />
         </>
     )
 }
